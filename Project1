@@ -1,1 +1,30 @@
+Idea 1 - Spotify:
+    
+    a. Our idea is to create a database based on Spotify. This idea is not new. We are borrowing an idea from an existing business.
+    A typical business day would be consist of users signing up for Spotify and being able to stream music for low cost. 
+    As a bussiness, we keep track of the hottest artists and their followers. The most popular songs
+    and albums.
+    
+    b. List your 5 tables and for each provide details about what data will be stored in the tables.
+    End-Users -> payment plans and usage 
+    Name of Artist -> custom ID, their custom playlists, total views, and total followers
+    Podcasts -> 
+    Spotify's Playlists ->
+    Radio -> 
+    their usage statistics? 
+    
+    c. Goal
+    The goal of Spotify is to figure out the relationship between artist and user. This will track
+    the correlation between the amount of hours a user typically spends on a particular artist
+    
+Idea 2 - Discord:
 
+Idea 3 - Venmo:
+    a.
+    b. List your 5 tables and for each provide details about what data will be stored in the tabkes.
+    End-user -> withdrawing money from your bank to give to friend/Venmo user, receiving money from other user, personal information
+    friends you have, 
+    
+    
+    
+    c.
