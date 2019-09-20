@@ -19,13 +19,23 @@ Idea 1 - Spotify:
     the correlation between the amount of hours a user typically spends on a particular artist
     
 Idea 2 - Discord:
+    a.
+    b. List your 5 tables and for each provide tdetails about what daa will be stored in the tables
+    End-user -> hours spend on Discord/chatting with friends, 
+    c. 
+    correlation between time spent gaming and chatting with friends? 
 
 Idea 3 - Venmo:
     a.
-    b. List your 5 tables and for each provide details about what data will be stored in the tabkes.
+    b. List your 5 tables and for each provide details about what data will be stored in the tables.
     End-user -> withdrawing money from your bank to give to friend/Venmo user, receiving money from other user, personal information
     friends you have, 
-    
-    
-    
     c.
+    
+Idea 4 - Uber:
+    a. The goal is Uber is to figure out the relationship between driver and user. 
+    b. End-user: total time we used Uber, how much we spend on Uber, the ratings and comments we used
+       Drivers -> car they have, experience, ratings, comments about them, total time they've driven
+       Geography -> how much is Uber is used in different cities or states
+    c. 
+
