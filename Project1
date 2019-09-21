@@ -7,7 +7,7 @@ Idea 1 - Spotify:
     
     b. List your 5 tables and for each provide details about what data will be stored in the tables.
     End-Users -> payment plans and usage 
-    Name of Artist -> Fiirst name, Last name, unique ID, their custom playlists, total views, and total followers
+    Name of Artist -> First name, Last name, unique ID, their custom playlists, total views, and total followers
     Song -> Song unique ID, Genre ID, Artist ID, song name, play count, Album ID
     Podcasts -> Artist ID, 
     Spotify's Playlists ->
