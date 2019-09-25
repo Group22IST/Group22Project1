@@ -1,0 +1,47 @@
+
+/* Names: Robin Leckey, Rohan Pamidimukkla,
+Matt Cowgill, and Roy Jung
+Idea 1 - Starbucks:
+A. Our idea is to create a database based on Starbucks. Starbucks is an overwhelmingly successful coffee shop, and they would have end-user data based on sales, time spent in the restaurant, etc. As a business, they keep track of what products sell the most and times that the restaurant sees the most traffic.
+
+B. List your 5 tables and for each provide details about what data will be stored in the tables.
+Products→ Products will store product related data using Item ID as a primary key. The constraint on this will be that item ID is always unique. Its attributes are cost, size, and prep time. This attribute will have a many to one relationship with inventory and transactions. 
+Employees → Employee data will store employee related data. The Employee ID will be the primary key. The constraint on this data is that Employee ID is always unique. The attributes for this table are Employee ID, first name, last name, wage, and address. The shift ID can serve as a secondary key. This will be a one to many relationship between Employee ID and Transaction ID.
+Transaction → Transaction and sales data will be stored here. The Transaction ID will be the primary key and is a constraint because it is always unique. The attributes of this table will be revenue, employee ID, and item ID. This will be a many to many relationship between transaction ID and item ID.
+Inventory → Inventory will store data about what the store has in stock. Item ID will be the primary key here. The attributes of the table will be item ID, cost, prep time, and count. 
+Restaurant → The data stored here will include data about the store itself. The primary key for this table will be the restaurant ID. Restaurant ID will be a constraint because it is always unique. The attributes of this table include restaurant ID, hours, employee count, and transaction ID.
+C. Goal
+The goal of Starbucks is to determine which product is most popular, depending on the time of day. We will use “preferences,” “types of products,” and “time of transaction” to determine the most popular product. 
+
+
+Idea 2 - Uber
+
+A. Our idea is to create a database based on Uber. Another competitor to Uber is Lyft, but Uber holds the largest market share. A typical business interaction includes the user and the driver interacting through software. Through software, the transaction data and trip data are stored. Users can receive the car data in real-time from the software as well. 
+
+B. List your 5 tables and for each provide details about what will be stored in the tables.
+a.Trip Data will store trip-related data using the trip ID entity as a primary key. The constraint on this will be that trip ID is always unique. The attributes for this table are distance, location, wait time, start time, end time, customer rating, and driver rating. Along with the foreign key unique attributes driver ID, customer ID, and transaction ID. This entity will typically have a many to one relationship.
+b. Driver data will store driver-related data using the Driver ID entity as the primary key. The constraint on this will be that Driver ID is always unique. The attributes for this table are first name, last name, driver rating, car model details, and the total trips. The attribute license plate number can serve as a secondary key. This entity will have a one to many relationship with Trip ID and Transaction ID and a one-to-one relationship with customerID and License plate.
+c. Customer data will store customer-related data using the CustomerID entity as the primary key. The constraint on this will be that customer ID is always unique. The attributes for this table are first name, last name, payment information and past tripIDs.
+d. Car data will store car-related data using the carID entity as the primary key. The constraint on this will be that the carID is always unique. The attributes for this table are latitude, longitude, license plate, driverID, and uber type. This entity will have a many to one relationship with customerID, one to one relationship with DriverID and a one to many relationship with tripID.
+e. Transaction data will store transaction-related data using transactionID as the primary key. The constraint on this will be that transactionID is always unique. The attributes for this table are payment type, amount, currency, flash pricing, customerID, tripID, carID, and driverID. This entity will have many to one relationship with driverID, CustomerID, carID, and a one to one relationship with tripID.
+
+C. Goal
+Our goal is to determine when Uber should adjust their flash pricing, depending on the demand for Ubers during certain times of the day, seasons, and the location. This will be done by using trip data, customer data, car data, and transaction data. 
+
+
+Idea 3 - Spotify
+ A. Our idea is to create a database based on Spotify. This idea is not new, since Apple Music, Amazon music, and Pandora exist alongside it. Many users use Spotify because it is available for all smartphone users. It is also accessible on Windows and Mac computers and laptops. We are borrowing an idea from an existing business. Spotify keeps track of the upcoming and popular artists entering their database. A typical business day would consist of users signing up for Spotify and being able to stream music for a low cost. As a business, we keep track of the hottest artists and their followers. 
+
+ B. List your 5 tables and for each provide details about what data will be stored in the tables.
+
+User- would illustrate how much payment plans and usage the customers require.
+Artists - would include their first name, last name, unique ID, their custom playlists, total views, and the amount of total followers
+Song - within artists, some songs have a unique ID, Genre ID, Artist ID, Apple ID, song name, play count, Album ID
+Podcasts - would have the name of podcast, unique podcast ID, artist ID, and total views associated with it
+ Playlists - auto-generated by Spotify, contains what music you listen to and which songs are the most popular, views, and different playlist genres
+Radio - would contain the most popular stations (which ones are popular at a certain time of day)
+
+ C. Goal
+ The goal of Spotify is to figure out the relationship between artist and user. This will track the correlation between the number of hours a user typically spends on a particular artist. For this example, we will use “end-users” and “artists” to determine this relationship. 
+
+
